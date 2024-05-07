@@ -1,2 +1,2 @@
-# 2024_CSE391_NentangWeb
-Web PlatForm Subject - Thuy Loi University
+## About our repository
+This repo is archive our practice exercise.
