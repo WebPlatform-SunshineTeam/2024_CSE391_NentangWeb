@@ -1,2 +1,2 @@
 ## About our repository
-This repo is archive our practice exercise.
+This repo archives our practice exercise.
