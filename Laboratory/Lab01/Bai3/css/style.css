@@ -1,0 +1,7 @@
+table, td, th {
+    border: 1px groove black;
+    padding: 30px;
+    border-collapse: collapse;
+    text-align: center;
+    border-width: 2px;
+}
