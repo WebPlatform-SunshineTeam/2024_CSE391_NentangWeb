@@ -18,6 +18,7 @@
     - [Lấy các thay đổi mới nhất từ kho lưu trữ trên Github về máy](#lấy-các-thay-đổi-mới-nhất-từ-kho-lưu-trữ-trên-github-về-máy)
     - [Tạo Pull Request](#tạo-pull-request)
     - [.gitignore](#gitignore)
+    - [Fork](#fork)
 ___
 # 1. Git
 
@@ -190,5 +191,14 @@ git fetch
 *.exe
 ```
 
+## Fork
+- Tạo bản sao của kho lưu trữ của người khác về kho lưu trữ của mình, sau đó thực hiện thay đổi và tạo Pull Request để đề xuất thay đổi cho người khác.
 
+- Khác nhau giữa `clone` và `fork`
+    - `clone`: Sao chép kho lưu trữ từ Github về máy, chỉ có mình mình sử dụng nên là private
+    - `fork`: Sao chép kho lưu trữ từ Github của người khác về Github của mình, có thể thực hiện thay đổi và tạo Pull Request để đề xuất thay đổi cho người khác -> public
 
+- ### Fork kho lưu trữ của người khác
+![](img/fork.png)
+
+![](img/fork-setup.png)
