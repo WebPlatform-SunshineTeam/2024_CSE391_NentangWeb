@@ -6,7 +6,7 @@ List of content:
 - [Git and Github tutorial](/Git-and-Github/)
 
 ### Four members of team:
-- Vũ Quang Nhật - **Leader**
+- **Vũ Quang Nhật - Leader**
 - Nguyễn Tiến Thành
 - Nguyễn Anh Tuấn
 - Trần Văn Kiên
