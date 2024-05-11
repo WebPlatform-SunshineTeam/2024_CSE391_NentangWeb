@@ -200,5 +200,5 @@ git fetch
 
 - ### Fork kho lưu trữ của người khác
 ![](img/fork.png)
-
+- ### Đặt tên kho lưu trữ bản sao
 ![](img/fork-setup.png)
