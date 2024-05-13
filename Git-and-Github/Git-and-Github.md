@@ -1,4 +1,4 @@
-# Hướng dấn sử dụng Git và Github
+# Hướng dẫn sử dụng Git và Github
 ## Mục lục
 - [1. Git](#1-git)
     - [Tải Git](#tải-git)
