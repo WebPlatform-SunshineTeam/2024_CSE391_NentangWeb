@@ -1,5 +1,5 @@
 ## About our repository
-This repo archives our practice exercise about Web Platform subject.
+This repository archives our practice exercises for the Web Platform subject.
 
 List of content:
 - [Laboratory exercises](/Laboratory/)
