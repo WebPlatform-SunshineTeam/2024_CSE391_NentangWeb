@@ -1,7 +1,7 @@
 ## About our repository
 This repository archives our practice exercises for the Web Platform subject.
 
-List of content:
+List of contents:
 - [Laboratory exercises](/Laboratory/)
 - [Git and Github tutorial](/Git-and-Github/)
 
