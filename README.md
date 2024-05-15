@@ -5,7 +5,7 @@ List of content:
 - [Laboratory exercises](/Laboratory/)
 - [Git and Github tutorial](/Git-and-Github/)
 
-### Four members of team:
+### Members of team:
 - **Vũ Quang Nhật - Leader**
 - Nguyễn Tiến Thành
 - Nguyễn Anh Tuấn
