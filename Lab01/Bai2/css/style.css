@@ -1,0 +1,22 @@
+
+#k{
+    height: 200px;
+    background-color: brown;
+}
+.tip{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+   width: 450px;
+}
+.icon {
+    color: brown;
+}
+.st{
+    margin-left: 0;
+}
+h2{
+    color: brown;
+}
+
