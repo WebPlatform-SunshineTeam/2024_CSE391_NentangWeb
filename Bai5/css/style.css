@@ -1,0 +1,14 @@
+.tip{
+    width:auto;
+    height: 30px;
+    background-color: rgb(178, 178, 178);
+}
+.table{
+    margin-top: 30px;
+}
+.icon{
+    color:yellow;
+}
+.icon2{
+    color: red;
+}
