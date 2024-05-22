@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- tailwindcss -->
+    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script> <!-- Ô textarea - rich text editor -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script> <!-- reCAPTCHA -->
 </head>
 
 <body>
     <form>
         <div class="ml-20 mr-20 pt-10">
-            <div class="border-gray-900 pb-5 mr-10">
+            <div class="pb-5">
                 <h2 class="font-semibold text-black-900 text-lg">Basic Info</h2>
                 <hr class="border-t-2 border-gray-500 mr-30">
             </div>
@@ -37,7 +39,7 @@
                 <div class="flex items-center"><label class="font-semibold">SSN # (if applicable)</label></div>
                 <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text" id="first-name" name="first-name" placeholder=""></div>
                 <div class="flex items-center"><label class="font-semibold">Report To</label></div>
-                <select class="col-span-1 border border-gray-500 w-[40%] rounded-lg">
+                <select class="col-span-1 border border-gray-500 w-[100%] rounded-lg">
                     <option value="">Bunchanan</option>
                     <option value="option1">Omega</option>
                     <option value="option2">Dragon Ball</option>
@@ -63,7 +65,7 @@
                 <div class="flex items-center"><label class="font-semibold">Postal Code</label></div>
                 <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text" id="first-name" name="first-name" placeholder=""></div>
                 <div class="flex items-center"><label class="font-semibold">Country</label></div>
-                <select class="col-span-4 border border-gray-500 w-[15%] rounded-lg">
+                <select class="col-span-4 border border-gray-500 w-[20%] rounded-lg">
                     <option value="">Russian Federation</option>
                     <option value="option1">Viet Nam</option>
                     <option value="option2">America</option>
@@ -81,11 +83,32 @@
                 <h2 class="font-semibold text-gray-900 text-lg">Optional Info</h2>
                 <hr class="border-t-2 border-gray-500 mr-30">
             </div>
-            <div class="ml-8 mr-30 gap-4 grid grid-cols-5 items-center">
-
+            <div class="ml-8 mr-30 gap-4 grid grid-cols-5 items-center font-semibold">
+                <div class="">Notes</div>
+                <div class="col-span-4 w-[85%]"><textarea name="editor1" id="editor1" rows="10" cols="50"></textarea></div>
+                <div><label class="">Preferred Shift</label></div>
+                <div class="col-span-4">
+                    <div><input type="checkbox">Regular</div>
+                    <div><input type="checkbox">Gravy Yard</div>
+                </div>
+                <div><label>Active</label></div>
+                <div class="col-span-4"><input type="checkbox"></div>
+                <div><label>Are you human?</label></div>
+                <div class="col-span-4">
+                    <div class="g-recaptcha" data-sitekey="WEBSITEKEYHERE" data-theme="light" data-size="normal" data-image="image"></div>
+                    </br>
+                </div>
+                <div></div>
+                <div class="col-span-4 border"><button type="button">Click to change</button></div>
+                <div></div>
+                <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text"></div>
             </div>
         </div>
     </form>
+    <script>
+        // Initialize CKEditor
+        CKEDITOR.replace('editor1');
+    </script>
 </body>
 
 </html>
