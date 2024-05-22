@@ -99,14 +99,28 @@
                     </br>
                 </div>
                 <div></div>
-                <div class="col-span-4 border"><button type="button">Click to change</button></div>
+                <div class="col-span-4 border border-gray-500 border-black w-[8%]"><button type="button" class="bg-yellow-300">Click to change</button></div>
                 <div></div>
                 <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text"></div>
             </div>
         </div>
+        <div class="pt-10 p-6">
+            <hr class="border border-gray-500 border-t-2">
+            <div class="flex justify-between items-center">
+                <div class="flex space-x-10">
+                    <a href=""><img class="h-10" src="/Laboratory/Lab01/Bai4/img/arrow-left-solid.svg" alt=""></a>
+                    <a href=""><img class="h-10" src="/Laboratory/Lab01/Bai4/img/arrow-right-solid.svg" alt=""></a>
+                </div>
+                <div class="flex space-x-2 ml-auto">
+                    <a href="" class="bg-gray-400 flex"><img class="h-5" src="/Laboratory/Lab01/Bai4/img/save2-regular.svg" alt="">Submit</a>
+                    <a href="" class="bg-gray-400 flex"><img class="h-5" src="/Laboratory/Lab01/Bai4/img/xmark-solid.svg" alt="">Cancel</a>
+                </div>
+            </div>
+            <div class="mt-4"><label class="font-semibold">* required</label></div>
+        </div>
     </form>
     <script>
-        // Initialize CKEditor
+        // Initialize CKEditor - rich text editor
         CKEDITOR.replace('editor1');
     </script>
 </body>
