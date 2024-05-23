@@ -16,3 +16,5 @@ Some framework we use in project and you need to know:
 - Nguyễn Tiến Thành
 - Nguyễn Anh Tuấn
 - Trần Văn Kiên
+
+Each member has one own branch, and the 'main' belongs to the leader.
