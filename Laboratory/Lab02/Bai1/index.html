@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Học web chuẩn</title>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(function () { // DOM ready, tương đương với $(document).ready(function() {...})
+            /* Code viết ở đây ↓ */
+            /*
+                $('button'): Sử dụng bộ chọn (Selector) của JQuery để chọn tất cả các nút <button> trên trang
+                .click(function() {...});: Gán một sự kiện click cho tất cả các nút được chọn, khi bất kỳ nút nào được nhấp, hàm bên trong sẽ được thực thi 
+                $('#box'): Sử dụng bộ chọn (Selector) của JQuery để chọn phần tử có id là 'box'
+                .html(): Thay thế toàn bộ nội dung HTML của phần tử được chọn bằng chuỗi HTML mới được cung cấp
+            */
+            $('button').click(function() {
+                $('#box').html('<h3>New Title</h3><div>New Content</div>')
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="box">
+        <h3>Title</h3>
+        <div>In suscipit nec velit sit amet convallis. Integer</div>
+    </div>
+    <button type="button">Click</button>
+</body>
+
+</html>
