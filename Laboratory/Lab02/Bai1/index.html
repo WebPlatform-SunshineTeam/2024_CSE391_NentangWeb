@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>Học web chuẩn</title>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script>
         $(function () { // DOM ready, tương đương với $(document).ready(function() {...})
             /* Code viết ở đây ↓ */
@@ -14,7 +16,7 @@
                 $('#box'): Sử dụng bộ chọn (Selector) của JQuery để chọn phần tử có id là 'box'
                 .html(): Thay thế toàn bộ nội dung HTML của phần tử được chọn bằng chuỗi HTML mới được cung cấp
             */
-            $('button').click(function() {
+            $('button').click(function () {
                 $('#box').html('<h3>New Title</h3><div>New Content</div>')
             });
         });
