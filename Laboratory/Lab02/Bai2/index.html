@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Học web chuẩn</title>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(function () {
+            /* Code viết ở đây ↓ */
+            $('button').click(function(){
+                var items = $('#list li').length + 1; // Đếm số lượng items hiện tại
+                $('#list').append('<li>item ' + items + '</li>') // Thêm item mới với số thứ tự items + 1
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <ul id="list">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+        <li>item 6</li>
+        <li>item 7</li>
+    </ul>
+    <button type="button">Add</button>
+</body>
+
+</html>
