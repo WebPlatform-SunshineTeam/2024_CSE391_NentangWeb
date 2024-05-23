@@ -23,9 +23,9 @@ Some tutorial and practice:
 Each member has one own branch, and the 'main' belongs to the leader.
 
 ## Quick start
-- Open the 'cmd'
+- Open the `cmd`
 - Clone this repo to your local
 ```bash
 git clone https://github.com/WebPlatform-SunshineTeam/2024_CSE391_NentangWeb.git
 ```
-- Open the project you want to
+- Open file `index.html` of each project you want to
