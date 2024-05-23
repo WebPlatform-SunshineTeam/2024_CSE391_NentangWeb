@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/36cd99d1f5.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
 </head>
 
-<body class="bg-gradient-to-r from-sky-500 to-pink-500">
+<body class="bg-gradient-to-r from-purple-500 to-pink-500">
     <div class="w-[65%] ml-auto mr-auto bg-white mt-10 mb-10">
         <form>
             <div class="ml-20 mr-20 pt-10">
@@ -111,15 +111,13 @@
                     <div class="col-span-4"><input type="checkbox"></div>
                     <div><label>Are you human?</label></div>
                     <div class="col-span-4">
-                        <!-- <div class="g-recaptcha" data-sitekey="WEBSITEKEYHERE" data-theme="light" data-size="normal"
+                        <div class="g-recaptcha" data-sitekey="WEBSITEKEYHERE" data-theme="light" data-size="normal"
                             data-image="image"></div>
-                        </br> -->
-                        <canvas id="captcha-image"></canvas>
-                        <input class="border border-gray-900 w-[85%] type="text" id="captcha-input" placeholder="Enter Captcha" data-answer="XfBzdD">
+                        </br>
                     </div>
                     <div></div>
                     <div class="col-span-4 border border-gray-500 border-black w-[20%]">
-                        <button type="button" class="bg-yellow-300">Click to change</button>
+                        <button type="button" class="bg-yellow-300 w-full">Click to change</button>
                     </div>
                     <div></div>
                 </div>
@@ -127,13 +125,13 @@
             <div class="pt-10 p-6">
                 <hr class="border border-gray-500 border-t-2">
                 <div class="flex justify-between items-center">
-                    <div class="flex space-x-5">
+                    <div class="flex space-x-4">
                         <button class="bg-gray-300 w-full pl-3 pr-3 border border-gray-500"> <i class="fa-solid fa-caret-left" aria-hidden="true"></i></button>
                         <button class="bg-gray-300 w-full pl-3 pr-3 border border-gray-500"><i class="fa-solid fa-caret-right" aria-hidden="true"></i></button>
                     </div>
-                    <div class="flex space-x-2 ml-auto mt-4">
-                        <button class="bg-gray-300 w-full p-0 border border-gray-500 flex items-center justify-center" type="button"><i class="fa-solid fa-upload" aria-hidden="true"></i>Submit</button>
-                        <button class="bg-gray-300 w-full p-0 border border-gray-500 flex items-center justify-center" type="button"><i class="fa-solid fa-xmark" aria-hidden="true"></i>Cancel</button>
+                    <div class="flex space-x-2 ml-auto mt-4 pl-2 pr-2">
+                        <button class="bg-gray-300 w-full pl-2 pr-2 border border-gray-500 flex items-center justify-center" type="button"><i class="fa-solid fa-upload" aria-hidden="true"></i>Submit</button>
+                        <button class="bg-gray-300 w-full pl-2 pr-2 border border-gray-500 flex items-center justify-center" type="button"><i class="fa-solid fa-xmark" aria-hidden="true"></i>Cancel</button>
                     </div>
                 </div>
                 <div class="mt-4"><label class="font-semibold">* required</label></div>
