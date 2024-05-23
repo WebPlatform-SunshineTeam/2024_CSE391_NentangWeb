@@ -5,11 +5,14 @@ List of contents:
 - [Laboratory exercises](/Laboratory/)
 - [Git and Github tutorial](/Git-and-Github/)
 
-Some framework we use in project and you need to know:
+Some frameworks we use in project and you need to know:
 - [Bootstrap](https://getbootstrap.com/)
 - [Tailwindcss](https://tailwindcss.com/)
 - [JQuery](https://jquery.com/)
 - [React](https://react.dev/)
+
+Some tutorial and practice:
+- [Học Web chuẩn](https://hocwebchuan.com/)
 
 ### Members of team:
 - **Vũ Quang Nhật - Leader**
