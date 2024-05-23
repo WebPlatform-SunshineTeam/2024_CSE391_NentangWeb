@@ -20,7 +20,7 @@ Some framework we use in project and you need to know:
 Each member has one own branch, and the 'main' belongs to the leader.
 
 ## Quick start
-- Open the 'cmd'
+- Open the `cmd`
 - Clone this repo to your local
 ```bash
 git clone https://github.com/WebPlatform-SunshineTeam/2024_CSE391_NentangWeb.git
