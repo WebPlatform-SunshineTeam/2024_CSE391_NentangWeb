@@ -8,118 +8,138 @@
     <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script> <!-- Ô textarea - rich text editor -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script> <!-- reCAPTCHA -->
     <link href="/Laboratory/Lab01/Bai4/script.js">
+    <script src="https://kit.fontawesome.com/36cd99d1f5.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
 </head>
 
-<body>
-    <form>
-        <div class="ml-20 mr-20 pt-10">
-            <div class="pb-5">
-                <h2 class="font-semibold text-black-900 text-lg">Basic Info</h2>
-                <hr class="border-t-2 border-gray-500 mr-30">
-            </div>
-            <div class="ml-8 mr-30 gap-4 grid grid-cols-5 items-center">
-                <div class="flex items-center"><label class="font-semibold">Employee ID</label></div>
-                <div class="col-span-4"><label>9</label></div>
-                <div class="flex items-center"><label class="font-semibold">Last Name</label></div>
-                <div class="col-span-4"><label>Dodsworth</label></div>
-                <div class="flex items-center"><label class="font-semibold">First Name</label></div>
-                <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text" id="first-name" name="first-name" placeholder="Enter your name"></div>
-                <div class="flex items-center row-span-4"><label class="font-semibold">Gender</label></div>
-                <div class="col-span-4"><input type="radio" name="gender" checked>Male</div>
-                <div class="col-span-4"><input type="radio" name="gender" checked>Female</div>
-                <div class="col-span-4"><input type="radio" name="gender" checked>XXX</div>
-                <div class="col-span-4"><input type="radio" name="gender" checked>ZZZ</div>
-                <div class="flex items-center"><label class="font-semibold">Title</label></div>
-                <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text" id="first-name" name="first-name" placeholder=""></div>
-                <div class="flex items-center"><label class="font-semibold">Suffix</label></div>
-                <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text" id="first-name" name="first-name" placeholder=""></div>
-                <div class="flex items-center"><label class="font-semibold">BirthDate</label></div>
-                <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text" id="first-name" name="first-name" placeholder=""></div>
-                <div class="flex items-center"><label class="font-semibold">HireDate</label></div>
-                <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text" id="first-name" name="first-name" placeholder=""></div>
-                <div class="flex items-center"><label class="font-semibold">SSN # (if applicable)</label></div>
-                <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text" id="first-name" name="first-name" placeholder=""></div>
-                <div class="flex items-center"><label class="font-semibold">Report To</label></div>
-                <select class="col-span-1 border border-gray-500 w-[100%] rounded-lg">
-                    <option value="">Bunchanan</option>
-                    <option value="option1">Omega</option>
-                    <option value="option2">Dragon Ball</option>
-                    <option value="option3">Be Xuan Mai</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="ml-20 mr-20 pt-10">
-            <div class="border-gray-900 pb-5 mr-10">
-                <h2 class="font-semibold text-gray-900 text-lg">Contact Info</h2>
-                <hr class="border-t-2 border-gray-500 mr-30">
-            </div>
-            <div class="ml-8 mr-30 gap-4 grid grid-cols-5 items-center">
-                <div class="flex items-center"><label class="font-semibold">Email</label></div>
-                <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text" id="first-name" name="first-name" placeholder="name@Example.com"></div>
-                <div class="flex items-center"><label class="font-semibold">Address</label></div>
-                <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text" id="first-name" name="first-name" placeholder="Enter your address"></div>
-                <div class="flex items-center"><label class="font-semibold">City</label></div>
-                <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text" id="first-name" name="first-name" placeholder=""></div>
-                <div class="flex items-center"><label class="font-semibold">Region</label></div>
-                <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text" id="first-name" name="first-name" placeholder=""></div>
-                <div class="flex items-center"><label class="font-semibold">Postal Code</label></div>
-                <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text" id="first-name" name="first-name" placeholder=""></div>
-                <div class="flex items-center"><label class="font-semibold">Country</label></div>
-                <select class="col-span-4 border border-gray-500 w-[20%] rounded-lg">
-                    <option value="">Russian Federation</option>
-                    <option value="option1">Viet Nam</option>
-                    <option value="option2">America</option>
-                    <option value="option3">Be Xuan Mai</option>
-                </select>
-                <div class="flex items-center"><label class="font-semibold">US Home Phone</label></div>
-                <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text" id="first-name" name="first-name" placeholder=""></div>
-                <div class="flex items-center"><label class="font-semibold">Photo</label></div>
-                <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text" id="first-name" name="first-name" placeholder=""></div>
-            </div>
-        </div>
-
-        <div class="ml-20 mr-20 pt-10">
-            <div class="border-gray-900 pb-5 mr-10">
-                <h2 class="font-semibold text-gray-900 text-lg">Optional Info</h2>
-                <hr class="border-t-2 border-gray-500 mr-30">
-            </div>
-            <div class="ml-8 mr-30 gap-4 grid grid-cols-5 items-center font-semibold">
-                <div class="">Notes</div>
-                <div class="col-span-4 w-[85%]"><textarea name="editor1" id="editor1" rows="10" cols="50"></textarea></div>
-                <div><label class="">Preferred Shift</label></div>
-                <div class="col-span-4">
-                    <div><input type="checkbox">Regular</div>
-                    <div><input type="checkbox">Gravy Yard</div>
+<body class="bg-gradient-to-r from-sky-500 to-pink-500">
+    <div class="w-[65%] ml-auto mr-auto bg-white mt-10 mb-10">
+        <form>
+            <div class="ml-20 mr-20 pt-10">
+                <div class="pb-5">
+                    <h2 class="font-semibold text-black-900 text-lg">Basic Info</h2>
+                    <hr class="border-t-2 border-gray-500 mr-30">
                 </div>
-                <div><label>Active</label></div>
-                <div class="col-span-4"><input type="checkbox"></div>
-                <div><label>Are you human?</label></div>
-                <div class="col-span-4">
-                    <div class="g-recaptcha" data-sitekey="WEBSITEKEYHERE" data-theme="light" data-size="normal" data-image="image"></div>
-                    </br>
-                </div>
-                <div></div>
-                <div class="col-span-4 border border-gray-500 border-black w-[8%]"><button type="button" class="bg-yellow-300">Click to change</button></div>
-                <div></div>
-                <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text"></div>
-            </div>
-        </div>
-        <div class="pt-10 p-6">
-            <hr class="border border-gray-500 border-t-2">
-            <div class="flex justify-between items-center">
-                <div class="flex space-x-10">
-                    <a href=""><img class="h-10" src="/Laboratory/Lab01/Bai4/img/arrow-left-solid.svg" alt=""></a>
-                    <a href=""><img class="h-10" src="/Laboratory/Lab01/Bai4/img/arrow-right-solid.svg" alt=""></a>
-                </div>
-                <div class="flex space-x-2 ml-auto">
-                    <a href="" class="bg-gray-400 flex"><img class="h-5" src="/Laboratory/Lab01/Bai4/img/save2-regular.svg" alt="">Submit</a>
-                    <a href="" class="bg-gray-400 flex"><img class="h-5" src="/Laboratory/Lab01/Bai4/img/xmark-solid.svg" alt="">Cancel</a>
+                <div class="ml-8 mr-30 gap-4 grid grid-cols-5 items-center">
+                    <div class="flex items-center"><label class="font-semibold">Employee ID</label></div>
+                    <div class="col-span-4"><label>9</label></div>
+                    <div class="flex items-center"><label class="font-semibold">Last Name</label></div>
+                    <div class="col-span-4"><label>Dodsworth</label></div>
+                    <div class="flex items-center"><label class="font-semibold">First Name</label></div>
+                    <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text" id="first-name"
+                            name="first-name" placeholder="Enter your name"></div>
+                    <div class="flex items-center row-span-4"><label class="font-semibold">Gender</label></div>
+                    <div class="col-span-4"><input type="radio" name="gender" checked>Male</div>
+                    <div class="col-span-4"><input type="radio" name="gender" checked>Female</div>
+                    <div class="col-span-4"><input type="radio" name="gender" checked>XXX</div>
+                    <div class="col-span-4"><input type="radio" name="gender" checked>ZZZ</div>
+                    <div class="flex items-center"><label class="font-semibold">Title</label></div>
+                    <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text" id="first-name"
+                            name="first-name" placeholder=""></div>
+                    <div class="flex items-center"><label class="font-semibold">Suffix</label></div>
+                    <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text" id="first-name"
+                            name="first-name" placeholder=""></div>
+                    <div class="flex items-center"><label class="font-semibold">BirthDate</label></div>
+                    <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text" id="first-name"
+                            name="first-name" placeholder=""></div>
+                    <div class="flex items-center"><label class="font-semibold">HireDate</label></div>
+                    <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text" id="first-name"
+                            name="first-name" placeholder=""></div>
+                    <div class="flex items-center"><label class="font-semibold">SSN # (if applicable)</label></div>
+                    <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text" id="first-name"
+                            name="first-name" placeholder=""></div>
+                    <div class="flex items-center"><label class="font-semibold">Report To</label></div>
+                    <select class="col-span-1 border border-gray-500 w-[100%] rounded-lg">
+                        <option value="">Bunchanan</option>
+                        <option value="option1">Omega</option>
+                        <option value="option2">Dragon Ball</option>
+                        <option value="option3">Be Xuan Mai</option>
+                    </select>
                 </div>
             </div>
-            <div class="mt-4"><label class="font-semibold">* required</label></div>
-        </div>
-    </form>
+        
+            <div class="ml-20 mr-20 pt-10">
+                <div class="border-gray-900 pb-5 mr-10">
+                    <h2 class="font-semibold text-gray-900 text-lg">Contact Info</h2>
+                    <hr class="border-t-2 border-gray-500 mr-30">
+                </div>
+                <div class="ml-8 mr-30 gap-4 grid grid-cols-5 items-center">
+                    <div class="flex items-center"><label class="font-semibold">Email</label></div>
+                    <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text" id="first-name"
+                            name="first-name" placeholder="name@Example.com"></div>
+                    <div class="flex items-center"><label class="font-semibold">Address</label></div>
+                    <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text" id="first-name"
+                            name="first-name" placeholder="Enter your address"></div>
+                    <div class="flex items-center"><label class="font-semibold">City</label></div>
+                    <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text" id="first-name"
+                            name="first-name" placeholder=""></div>
+                    <div class="flex items-center"><label class="font-semibold">Region</label></div>
+                    <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text" id="first-name"
+                            name="first-name" placeholder=""></div>
+                    <div class="flex items-center"><label class="font-semibold">Postal Code</label></div>
+                    <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text" id="first-name"
+                            name="first-name" placeholder=""></div>
+                    <div class="flex items-center"><label class="font-semibold">Country</label></div>
+                    <select class="col-span-4 border border-gray-500 w-[20%] rounded-lg">
+                        <option value="">Russian Federation</option>
+                        <option value="option1">Viet Nam</option>
+                        <option value="option2">America</option>
+                        <option value="option3">Be Xuan Mai</option>
+                    </select>
+                    <div class="flex items-center"><label class="font-semibold">US Home Phone</label></div>
+                    <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text" id="first-name"
+                            name="first-name" placeholder=""></div>
+                    <div class="flex items-center"><label class="font-semibold">Photo</label></div>
+                    <div class="col-span-4"><input class="border border-gray-500 border-t-4 w-[85%]" type="text" id="first-name"
+                            name="first-name" placeholder=""></div>
+                </div>
+            </div>
+        
+            <div class="ml-20 mr-20 pt-10">
+                <div class="border-gray-900 pb-5 mr-10">
+                    <h2 class="font-semibold text-gray-900 text-lg">Optional Info</h2>
+                    <hr class="border-t-2 border-gray-500 mr-30">
+                </div>
+                <div class="ml-8 mr-30 gap-4 grid grid-cols-5 items-center font-semibold">
+                    <div class="">Notes</div>
+                    <div class="col-span-4 w-[85%]"><textarea name="editor1" id="editor1" rows="10" cols="50"></textarea></div>
+                    <div><label class="">Preferred Shift</label></div>
+                    <div class="col-span-4">
+                        <div><input type="checkbox">Regular</div>
+                        <div><input type="checkbox">Gravy Yard</div>
+                    </div>
+                    <div><label>Active</label></div>
+                    <div class="col-span-4"><input type="checkbox"></div>
+                    <div><label>Are you human?</label></div>
+                    <div class="col-span-4">
+                        <!-- <div class="g-recaptcha" data-sitekey="WEBSITEKEYHERE" data-theme="light" data-size="normal"
+                            data-image="image"></div>
+                        </br> -->
+                        <canvas id="captcha-image"></canvas>
+                        <input class="border border-gray-900 w-[85%] type="text" id="captcha-input" placeholder="Enter Captcha" data-answer="XfBzdD">
+                    </div>
+                    <div></div>
+                    <div class="col-span-4 border border-gray-500 border-black w-[20%]">
+                        <button type="button" class="bg-yellow-300">Click to change</button>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="pt-10 p-6">
+                <hr class="border border-gray-500 border-t-2">
+                <div class="flex justify-between items-center">
+                    <div class="flex space-x-5">
+                        <button class="bg-gray-300 w-full pl-3 pr-3 border border-gray-500"> <i class="fa-solid fa-caret-left" aria-hidden="true"></i></button>
+                        <button class="bg-gray-300 w-full pl-3 pr-3 border border-gray-500"><i class="fa-solid fa-caret-right" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="flex space-x-2 ml-auto mt-4">
+                        <button class="bg-gray-300 w-full p-0 border border-gray-500 flex items-center justify-center" type="button"><i class="fa-solid fa-upload" aria-hidden="true"></i>Submit</button>
+                        <button class="bg-gray-300 w-full p-0 border border-gray-500 flex items-center justify-center" type="button"><i class="fa-solid fa-xmark" aria-hidden="true"></i>Cancel</button>
+                    </div>
+                </div>
+                <div class="mt-4"><label class="font-semibold">* required</label></div>
+            </div>
+        </form>
+    </div>
     <script>
         // Initialize CKEditor - rich text editor
         CKEDITOR.replace('editor1');
