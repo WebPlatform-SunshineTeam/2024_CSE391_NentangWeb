@@ -11,7 +11,7 @@ Some frameworks we use in project and you need to know:
 - [JQuery](https://jquery.com/)
 - [React](https://react.dev/)
 
-Some tutorial and practice:
+Some tutorials and practices exercise:
 - [Học Web chuẩn](https://hocwebchuan.com/)
 
 ### Members of team:
