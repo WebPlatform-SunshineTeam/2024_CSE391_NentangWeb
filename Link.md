@@ -1,11 +1,11 @@
 # Link CDN
 Paste to **head** of HTML file
 - ## Tailwind
-```js
+```html
 <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CSS -->
 ```
 - ## JQuery
-```js
+```html
 <script src="https://code.jquery.com/jquery-latest.js"></script>
 ```
 - ## Bootstrap
