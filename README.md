@@ -12,7 +12,8 @@ Some frameworks we use in project and you need to know:
 - [React](https://react.dev/)
 
 Some tutorials and practices exercise:
-- [Học Web chuẩn](https://hocwebchuan.com/)
+- Consist final exams: [Học Web chuẩn](https://hocwebchuan.com/)
+- Learning CSS flexbox: [FlexBox Froggy](https://flexboxfroggy.com/)
 
 ### Members of team:
 - **Vũ Quang Nhật - Leader**
