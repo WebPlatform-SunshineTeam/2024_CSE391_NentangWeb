@@ -14,6 +14,9 @@ Some frameworks we use in project and you need to know:
 Some tutorials and practices exercise:
 - Consist final exams: [Học Web chuẩn](https://hocwebchuan.com/)
 - Learning CSS flexbox: [FlexBox Froggy](https://flexboxfroggy.com/)
+- [codepip](https://codepip.com/games/)
+- [Knights of the Flexbox Table](https://knightsoftheflexboxtable.com/)
+- Learn Tailwind by game: [Tailwind Battle](https://www.tailwindbattle.com/)
 
 ### Members of team:
 - **Vũ Quang Nhật - Leader**
