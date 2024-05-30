@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sinh viên</title>
+    <script src="/tailwind.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="w-[75%] mx-auto border border-gray-400 rounded-lg">
+        <nav class="text-white bg-sky-500 h-12 overflow-hidden">
+            Danh sách sinh viên
+        </nav>
+        
+        <div class="text-slate-900 p-4">
+            <form method="post" id="MyForm">  <!-- method: get, post -->
+                <label>Họ tên sinh viên:</label>
+                <input id="tensinhvien" type="text" required="true" class="block border border-gray-500 border-collapse rounded-lg">
+                <label>Mã sinh viên:</label>
+                <input id="masinhvien" type="text" required="true" class="block border border-gray-500 border-collapse rounded-lg">
+                <label>Ngày sinh:</label>
+                <input id="masinhvien" type="date" required="true" class="block border border-gray-500 border-collapse rounded-lg">
+                <label>Khoa</label>
+                <input id="khoa" type="text" required="true" class="block border border-gray-500 border-collapse rounded-lg">
+                <label>Lớp</label>
+                <input id="lop" type="text" required="true" class="block border border-gray-500 border-collapse rounded-lg">
+                <button type="submit" class="bg-lime-500 p-2 rounded-lg border border-gray-500 mt-2 hover:bg-lime-600">Save</button>
+                <button type="reset" class="bg-yellow-500 p-2 rounded-lg border border-gray-500 mt-2 hover:bg-yellow-600">Reset</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="mt-5 w-[75%] mx-auto border border-gray-400">
+        <table class="border border-solid w-full table-auto">
+            <thead>
+                <tr class="">
+                    <th class="border border-gray-500">No</th>
+                    <th class="border border-gray-500">Họ tên</th>
+                    <th class="border border-gray-500">Mã sinh viên</th>
+                    <th class="border border-gray-500">Ngày sinh</th>
+                    <th class="border border-gray-500">Khoa</th>
+                    <th class="border border-gray-500">Lớp</th>
+                    <th class="border border-gray-500"></th>
+                    <th class="border border-gray-500"></th>
+                </tr>
+                
+            </thead>
+            <tbody id="student_líst_id">
+                <!-- Insert html vao day -> row -> 1 user -->
+            </tbody>
+        </table>
+    </div>
+    <script type="text/javascript">
+        var studentList = [];
+        var currentIndex = -1;
+
+        var json = localStorage.getItem('stdList');
+        if (json != null) {
+            studentList = JSON.parse(json);
+            
+            showData();
+        }
+
+        $('MyForm').submit(function() {
+            console.log('submit');
+            // Save data
+            var tensv = $('#tensinhvien').val();
+            var masv = $('#masinhvien').val();
+            var ngaysinh = $('ngaysinh').val();
+            var khoa = $('#khoa').val();
+            var lop = $('#lop').val();
+        });
+
+        // Tao 1 object sinh vien
+        var student = {
+            tensv: tensv,
+            masv: masv,
+            ngaysinh: ngaysinh,
+            khoa: khoa,
+            lop: lop,
+        };
+
+        // Them sinh vien vao danh sach
+        if (currentIndex >= 0) { // Dang o trang thai cap nhat
+            // Sua du lieu
+            studentList[currentIndex] = student; // Cap nhat thong tin sinh vien o vi tri currentIndex trong studentList
+            currentIndex = -1; // Reset lai currentIndex
+        }
+        else {
+            studentList.push(student); // Them sinh vien vao cuoi danh sach
+        }
+
+        function showData() {
+            // Hien thi du lieu len table
+            $('#student_list_id').empty();
+            // Duyet qua danh sach sinh vien
+            for (let i = 0; i < studentList.length; i++) {
+                $('student_list_id').append(
+                    `
+                    <tr class="">
+                        <td>${i + 1}</td>
+                        <td>${studentList[i].tensv}</td>
+                        <td>${studentList[i].masv}</td>
+                        <td>${studentList[i].ngaysinh}</td>
+                        <td>${studentList[i].khoa}</td>
+                        <td>${studentList[i].lop}</td>
+                    </tr>
+                    `
+                )
+
+                // Luu du lieu vao localStorage
+                localStorage.setItem('stdList', JSON.stringify(studentList));
+            }
+        }
+    </script>
+</body>
+
+</html>
