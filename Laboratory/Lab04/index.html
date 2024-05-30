@@ -102,20 +102,20 @@
             localStorage.setItem('stdList', JSON.stringify(studentList));
             // Hien thi du lieu len table
             showData();
+            // Reset form
+            $('#MyForm')[0].reset();
         });
 
-        // Chinh sua thong tin sinh vien
         function editStudent(index) {
-            let curentIndex = index;
+            currentIndex = index;  // Đảm bảo biến currentIndex được cập nhật toàn cục
             let student = studentList[index];
-            $('tensinhvien').val(student.tensv);
-            $('masinhvien').val(student.masv);
-            $('ngaysinh').val(student.ngaysinh);
-            $('khoa').val(student.khoa);
-            
+            $('#tensinhvien').val(student.tensv);
+            $('#masinhvien').val(student.masv);
+            $('#ngaysinh').val(student.ngaysinh);
+            $('#khoa').val(student.khoa);
+            $('#lop').val(student.lop);
         }
 
-        // Xoa thong tin sinh vien
         function deleteStudent(index) {
             let option = confirm('Ban co chac chan muon xoa sinh vien nay khong?');
             if (!option) return;
@@ -139,14 +139,14 @@
                         <td class="border border-white-500">${studentList[i].khoa}</td>
                         <td class="border border-white-500">${studentList[i].lop}</td>
                         <td class="border border-white-500">
-                            <button type="edit" class="bg-blue-500 rounded-lg hover:bg-blue-600 w-[65%] p-2" onclick="editStudent(${i})">Edit</button>
+                            <button type="button" class="bg-blue-500 rounded-lg hover:bg-blue-600 w-[65%] p-2" onclick="editStudent(${i})">Edit</button>
                         </td>
                         <td class="border border-white-500">
-                            <button type="delete" class="bg-red-500 p-2 rounded-lg hover:bg-red-600 w-[65%] p-2" onclick="deleteStudent(${i})">Delete</button>
+                            <button type="button" class="bg-red-500 p-2 rounded-lg hover:bg-red-600 w-[65%] p-2" onclick="deleteStudent(${i})">Delete</button>
                         </td>
                     </tr>
                     `
-                )
+                );
             }
         }
     </script>
