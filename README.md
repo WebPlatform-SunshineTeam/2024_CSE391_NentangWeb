@@ -38,7 +38,7 @@ git clone https://github.com/WebPlatform-SunshineTeam/2024_CSE391_NentangWeb.git
 ```bash
 npm start
 ```
-> [!IMPORTAN]
+> [!IMPORTANT]
 > Make sure you installed those:
 > - npm
 > - npx
