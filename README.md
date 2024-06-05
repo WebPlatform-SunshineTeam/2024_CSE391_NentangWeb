@@ -5,6 +5,7 @@ List of contents:
 - [Laboratory exercises](/Laboratory/)
 - [Git and Github tutorial](/Git-and-Github/Git-and-Github.md)
 - [30 days Javascript](/30days-Javascript/)
+- [React Projects](/ReactJS-Project/)
 
 Some frameworks we use in project and you need to know:
 - [Bootstrap](https://getbootstrap.com/)
@@ -33,4 +34,14 @@ Each member has one own branch, and the 'main' belongs to the leader.
 ```bash
 git clone https://github.com/WebPlatform-SunshineTeam/2024_CSE391_NentangWeb.git
 ```
-- Open file `index.html` of each project you want to
+- If it is **React Project**, you could open the `cmd` in this project, and paste it:
+```bash
+npm start
+```
+> [!IMPORTAN]
+> Make sure you installed those:
+> - npm
+> - npx
+> - Node JS
+
+- If it's the normal project (it's only consist HTML, CSS, JavaScript), you could only open file `index.html` and run it by `Live Server`
