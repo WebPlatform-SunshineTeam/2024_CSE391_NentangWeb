@@ -29,3 +29,38 @@ const calculatePerimeter = rectangle => {
 
 console.log(calculatePerimeter(rect))
 
+const todoList = [
+  {
+    task: "Prepare JS Test",
+    time: "4/1/2020 8:30",
+    completed: true
+  },
+  {
+    task: "Give JS Test",
+    time: "4/1/2020 10:00",
+    completed: false
+  },
+  {
+    task: "Assess Test Result",
+    time: "4/1/2020 1:00",
+    completed: false
+  }
+];
+for (const {task, time, completed} of todoList) {
+    console.log(task, time, completed)
+}
+
+const evens = [0, 2, 4, 6, 8, 10];
+const odds = [1, 3, 5, 7, 9];
+const evenNumbers = [...evens, ...odds]
+console.log(evenNumbers)
+
+const user = {
+    name: `John`,
+    age: 24,
+    school: `FPT University`
+}
+const otherUser = (...args) => { // Rest operator: gom cac tham so thanh 1 mang
+    console.log(args)
+}
+otherUser(1, 2, 3, 4) // [1, 2, 3, 4]
