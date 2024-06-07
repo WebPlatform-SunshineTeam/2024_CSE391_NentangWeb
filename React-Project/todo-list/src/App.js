@@ -11,7 +11,7 @@ function App() {
   }
 
   const removeTodo = (index) => {
-    setTodos(todos.filter((todo, i) => i != index))
+    setTodos(todos.filter((todo, i) => i !== index))
   }
 
   return (
