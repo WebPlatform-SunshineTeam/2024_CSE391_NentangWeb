@@ -36,6 +36,7 @@ git clone https://github.com/WebPlatform-SunshineTeam/2024_CSE391_NentangWeb.git
 ```
 - If it is **React Project**, you could open the `cmd` in this project, and paste it:
 ```bash
+npm install
 npm start
 ```
 > [!IMPORTANT]
