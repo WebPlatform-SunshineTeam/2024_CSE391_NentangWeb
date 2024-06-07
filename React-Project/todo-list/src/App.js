@@ -14,13 +14,13 @@ function App() {
     setTodos(todos.filter((todo, i) => i !== index))
   }
 
-  return (
-    <div className="App">
+  return <div className="App" style={{ width: "65%", marginLeft: "auto", marginRight: "auto" }}>
+      <div style={{ backgroundColor: "pink" }}>
         <h1>Todo List</h1>
-        <TodoForm addTodo={addTodo}/>
-        <TodoList todos={todos} removeTodo={removeTodo}/>
-    </div>
-  );
+        <TodoForm addTodo={addTodo} />
+      </div>
+      <TodoList todos={todos} removeTodo={removeTodo}/>
+    </div>;
 }
 
 export default App;
