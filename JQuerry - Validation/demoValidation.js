@@ -20,7 +20,6 @@ $().ready(function() {
 			"re-password": {
 				equalTo: "#password",
 				minlength: 8
-				
 			}
 		},
 		messages: {
