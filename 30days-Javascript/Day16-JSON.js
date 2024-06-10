@@ -146,8 +146,9 @@ console.log(JSON.stringify(student, ['firstName', 'lastName', 'skills'], 4))
 // 1. Parse the txt JSON to object.
 console.log(JSON.parse(txt))
 // 2. Find the the user who has many skills from the variable stored in txt.
+console.log('-----------------')
 let users = JSON.parse(txt)
-for (let user in users) {
-    // if (user['skills'].length > 5)
+for (let user in users) { // Đặt tên khóa là user, in ra khóa là console.log(user), truy cập vào từng thuộc tính của khóa là users[user]['tên thuộc tính']
+    if (users[user]['skills'].length > 5)
         console.log(user)
 }
