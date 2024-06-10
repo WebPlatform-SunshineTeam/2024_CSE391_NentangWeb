@@ -11,7 +11,7 @@ export default function Header({todos, setTodos}) {
     }
 
   return (
-    <div style={{ backgroundColor: "blue"}}>
+    <div style={{ backgroundColor: "blue", padding: '12px'}}>
         <h1 style={{color: "white"}}>Danh sách việc cần làm</h1>
         <div style={{ display: "flex", justifyContent: 'center'}}>
             <input onChange={e => setValue(e.target.value)} value={value} placeholder='TIÊU ĐỀ VIỆC CẦN LÀM...' style={{ padding: '8px', width: '300px' }}/>
