@@ -15,7 +15,7 @@ export default function TodoForm({ addTodo }) { // props
     }
     return (
     <form onSubmit={handleSubmit}> {/* Khi submit form thi goi ham handleSubmit */}
-        <input type='text' value={value} onChange={(e) => setValue(e.target.value)}/> {/* Khi gia tri cua input thay doi, su kien e se duoc goi, no se cap nhat gia tri cua no bang state setValue, e.target.value tuc la gia tri cua su kien dang duoc kich hoat */}
+        <input type='text' value={value} onChange={(e) => setValue(e.target.value)} placeholder='Add new todo...'/> {/* Khi gia tri cua input thay doi, su kien e se duoc goi, no se cap nhat gia tri cua no bang state setValue, e.target.value tuc la gia tri cua su kien dang duoc kich hoat */}
         <button type='submit'>Add</button> {/* Khi an vao nut add, form se duoc submit va su kien onSubmit duoc kich hoat */}
     </form>
   )
