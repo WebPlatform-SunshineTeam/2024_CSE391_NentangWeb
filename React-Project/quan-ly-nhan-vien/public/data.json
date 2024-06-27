@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Nguyen Van A",
+    "mail": "nguyenvana@example.com",
+    "address": "Quận 1, TP. Hồ Chí Minh",
+    "phone": "0901234567",
+    "act": 1
+  },
+  {
+    "id": 2,
+    "name": "Tran Thi B",
+    "mail": "tranthib@example.com",
+    "address": "Quận 2, TP. Hồ Chí Minh",
+    "phone": "0912345678",
+    "act": 1
+  },
+  {
+    "id": 3,
+    "name": "Le Van C",
+    "mail": "levanc@example.com",
+    "address": "Quận 3, TP. Hồ Chí Minh",
+    "phone": "0923456789",
+    "act": 1
+  },
+  {
+    "id": 4,
+    "name": "Pham Thi D",
+    "mail": "phamthid@example.com",
+    "address": "Quận 4, TP. Hồ Chí Minh",
+    "phone": "0934567890",
+    "act": 1
+  },
+  {
+    "id": 5,
+    "name": "Hoang Van E",
+    "mail": "hoangvane@example.com",
+    "address": "Quận 5, TP. Hồ Chí Minh",
+    "phone": "0945678901",
+    "act": 1
+  }
+]
