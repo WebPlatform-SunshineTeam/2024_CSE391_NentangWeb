@@ -1,7 +1,7 @@
-# Tải các thư viện về trước khi chạy
-## Demo: 
+# Demo: 
 ![alt text](image.png)
 
+# Tải các thư viện về trước khi chạy
 - Paste vào cmd:
 ```bash
 npm install -D tailwindcss postcss autoprefixer
