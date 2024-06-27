@@ -23,7 +23,6 @@ Some tutorials and practices exercise:
 ## Instructionf for installing Tailwindcss 
 ```bash
 npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
 npx tailwindcss init --full
 ```
 
@@ -34,7 +33,36 @@ npx tailwindcss init --full
 @tailwind utilities;
 ```
 
-- Chạy dự án
+- Thay thế dòng **content** trong file **tailwind.config.js** bằng:
+```js
+content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+],
+```
+
+## Javascript validator
+- Docs: "D:\2024_CSE391_NentangWeb\Framework\validator - npm.html"
+
+```bash
+npm i validator
+```
+
+## Fontawesome
+```bash
+npm install --save @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
+```
+
+- Import module:
+```jsx
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+```
+
+## Fetch API
+```bash
+npm install node-fetch
+```
+
+## Chạy dự án
 ```bash
 npm run start
 ```
