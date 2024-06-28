@@ -17,12 +17,12 @@ useEffect(() => {
     .catch(error => console.error("Error fetching data: ", error));
 }, []);
   
-  return <div className="">
+  return <div className="flex flex-col min-h-screen"> {/* min-h-screen: Dam bao footer luon luon nam o cuoi trang */}
       <Navbar />
       <Navbar2 list={list} setList={setList} />
       <Element name="Họ và tên" mail="Thư điện tử" address={"Địa chỉ"} phone={"Số điện thoại"} act={0} />
       <List list={list} setList={setList} />
-      <div className="mt-24 ml-2 mr-2 justify-between">
+      <div className="mt-auto mb-3 ml-2 mr-2">
         <Footer list={list} />
       </div>
     </div>;
