@@ -3,8 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleMinus, faCirclePlus } from '@fortawesome/free-solid-svg-icons'
 import Add from './Add'
 
-export default function Navbar2({ setList, show, setShow, itemSelect, removeItem }) {
-
+export default function Navbar2({ setShow }) {
     return (
         <div className='mt-10 p-4 justify-between items-center'>
             <h1 className=''><strong>PRISON CELL LIST</strong></h1>
