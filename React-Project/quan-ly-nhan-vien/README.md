@@ -1,5 +1,6 @@
 # Demo: 
-![alt text](image.png)
+## On version 
+![alt text](/img/image.png) 
 
 # Tải các thư viện về trước khi chạy
 - Paste vào cmd:

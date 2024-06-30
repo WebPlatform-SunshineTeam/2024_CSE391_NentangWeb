@@ -23,5 +23,10 @@ export const data = [
     phone: "36",
     act: 1
   },
-
+  {
+    id: 5,
+    name: "Cell 104",
+    phone: "36",
+    act: 1
+  }
 ];

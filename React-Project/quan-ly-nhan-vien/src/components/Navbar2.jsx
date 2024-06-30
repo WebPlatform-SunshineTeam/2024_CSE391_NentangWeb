@@ -7,7 +7,7 @@ export default function Navbar2({ setShow }) {
     return (
         <div className='mt-10 p-4 justify-between items-center'>
             <h1 className=''><strong>PRISON CELL LIST</strong></h1>
-            <button onClick={() => setShow(true)} className='mt-2 bg-green-600 text-white p-2 rounded  hover:bg-green-500'><FontAwesomeIcon icon={faCirclePlus} /> Add Cell</button>
+            <button className='mt-2 bg-green-600 text-white p-2 rounded  hover:bg-green-500'><FontAwesomeIcon icon={faCirclePlus} /> Add Cell</button>
         </div>
     )
 }
