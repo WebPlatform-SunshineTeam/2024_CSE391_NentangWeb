@@ -10,57 +10,11 @@ List of contents:
 Some frameworks we use in project and you need to know:
 - [Bootstrap](https://getbootstrap.com/)
 - [Tailwindcss](https://tailwindcss.com/)
-- [JQuery](https://jquery.com/)
 - [React](https://react.dev/)
 
 Some tutorials and practices exercise:
 - Consist final exams: [Học Web chuẩn](https://hocwebchuan.com/)
 - Learning CSS flexbox: [FlexBox Froggy](https://flexboxfroggy.com/)
-- [codepip](https://codepip.com/games/)
-- [Knights of the Flexbox Table](https://knightsoftheflexboxtable.com/)
-- Learn Tailwind by game: [Tailwind Battle](https://www.tailwindbattle.com/)
-
-## Instructionf for installing Tailwindcss 
-```bash
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init --full
-```
-
-- Dán 3 dòng này vào đầu file **index.css**
-```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
-
-- Thay thế dòng **content** trong file **tailwind.config.js** bằng:
-```js
-content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-],
-```
-
-## Javascript validator
-- Docs: "D:\2024_CSE391_NentangWeb\Framework\validator - npm.html"
-
-```bash
-npm i validator
-```
-
-## Fontawesome
-```bash
-npm install --save @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
-```
-
-- Import module:
-```jsx
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-```
-
-## Fetch API
-```bash
-npm install node-fetch
-```
 
 ## Chạy dự án
 ```bash
@@ -81,11 +35,7 @@ Each member has one own branch, and the 'main' belongs to the leader.
 ```bash
 git clone https://github.com/WebPlatform-SunshineTeam/2024_CSE391_NentangWeb.git
 ```
-- If it is **React Project**, you could open the `cmd` in this project, and paste it:
-```bash
-npm install
-npm start
-```
+
 > [!IMPORTANT]
 > Make sure you installed those:
 > - npm
