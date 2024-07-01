@@ -2,10 +2,11 @@
 This repository archives our practice exercises for the Web Platform subject.
 
 List of contents:
+- [React Projects](/ReactJS-Project/)
 - [Laboratory exercises](/Laboratory/)
 - [Git and Github tutorial](/Git-and-Github/Git-and-Github.md)
 - [30 days Javascript](/30days-Javascript/)
-- [React Projects](/ReactJS-Project/)
+- [Đề bài](/DeBai/)
 
 Some frameworks we use in project and you need to know:
 - [Bootstrap](https://getbootstrap.com/)
