@@ -1,6 +1,6 @@
 # Demo:
 ## Latest version - My middle exam 
-![video](./img/demo.mkv)
+![video](./img/demo1.gif)
 
 ## Old version 
 ![alt text](./img/image.png) 
