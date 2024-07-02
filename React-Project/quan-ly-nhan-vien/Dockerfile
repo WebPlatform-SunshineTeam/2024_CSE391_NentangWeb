@@ -1,5 +1,5 @@
-# Sử dụng một base image chứa Node.js
-FROM node:latest
+# Sử dụng base image nhẹ chứa Node.js
+FROM node:16-alpine
 
 # Thiết lập thư mục làm việc trong container
 WORKDIR /app
@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Cài đặt các dependencies
-RUN npm install
+RUN npm install --production
 
 # Sao chép các file và thư mục còn lại vào thư mục làm việc
 COPY . .
@@ -16,8 +16,12 @@ COPY . .
 # Build ứng dụng React
 RUN npm run build
 
-# Expose cổng mà ứng dụng sẽ chạy trên (nếu cần thiết)
-EXPOSE 3000
+# Chỉ sao chép thư mục build vào image cuối cùng
+FROM nginx:alpine
+COPY --from=0 /app/build /usr/share/nginx/html
 
-# Khởi chạy ứng dụng khi container được khởi động
-CMD ["npm", "start"]
+# Expose cổng mà ứng dụng sẽ chạy trên
+EXPOSE 80
+
+# Khởi chạy nginx
+CMD ["nginx", "-g", "daemon off;"]
